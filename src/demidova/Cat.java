@@ -11,7 +11,8 @@ public class Cat {
     }
 
     public void catEat(Plate food) {
-        if(food.isEnough(appetite)) {
+        if (satisfied == appetite) System.out.println(name + " уже наелся.");
+        else if(food.isEnough(appetite)) {
             food.decreaseFood(appetite);
             satisfied = appetite;
             System.out.println(name + " съел " + appetite + " единиц корма.");

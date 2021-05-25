@@ -18,5 +18,7 @@ public class Main {
             System.out.println();
             if (i < catsArr.length - 1) plate.moreFood();
         }
+        catsArr[1].catEat(plate);
+
     }
 }
